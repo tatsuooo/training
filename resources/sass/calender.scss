@@ -1,0 +1,162 @@
+header {
+  margin-top: 20px;
+}
+h1.logo {
+  background: #c2edff;
+ padding: 0.5em;
+}
+
+.ribbon14-wrapper {
+  display: block;
+  position: relative;
+  margin: 15px auto;
+  padding: 10px 0;
+  width: 400px;
+  background: #f1f1f1;
+  box-sizing: border-box;
+  }
+
+  .ribbon14 {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin: 0;
+    padding: 10px 0;
+    z-index: 2;
+    width: 40px;
+    text-align: center;
+    font-size: 17px;
+    color: white;
+    background: #ff785b;
+  }
+
+  .ribbon14:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    height: 0;
+    width: 0;
+    border-left: 20px solid #ff785b;
+    border-right: 20px solid #ff785b;
+    border-bottom: 10px solid transparent;
+  }
+
+h5.text-sub {
+  padding: 0.5em;/*文字周りの余白*/
+color: #494949;/*文字色*/
+background: #fffaf4;/*背景色*/
+border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+}
+.box1 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #232323;
+    background: whitesmoke;
+    border-left: solid 10px #ffc06e;
+     text-align: center;
+
+}
+.box1 p {
+    margin: 0;
+    padding: 0;
+}
+
+ul.kata-menu{
+   text-align: center;
+}
+.button-area {
+  text-align: center;
+}
+.header-title-area {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+body {
+  background-color: #CCFFFF;
+}
+
+h4.gender {
+    color: red;
+  float: left;
+  border-bottom: double 5px #FFC778;
+}
+
+.kata-munu {
+  width: 100%;
+ background-color: #fff;
+ padding: 20px 0;
+}
+.kata-menu:after {
+  clear: both;
+  display: block;
+  content: " ";
+}
+.kata-menu li {
+ float: left;
+ padding: 0 30px;
+ text-align: center;
+ list-style-type: none;
+}
+
+.kata-menu li a {
+  color: #333;
+  text-decoration: none;
+}
+li {
+   padding: 40px 100px;
+}
+table.calendar{
+    width: 100%;
+    height: 100%;
+}
+
+
+table.calendar th, table.calendar td{
+    padding: 15px;
+    background-color: #FFF;
+   text-align: center;
+   border-radius: 13px #CCC;
+}
+
+/* 行の最初のtdは日曜日なため赤く */
+table.calendar th:first-of-type, table.calendar td:first-of-type{
+    background-color: #ffefef;
+    color: #FF0000;
+    font-weight: bold;
+}
+
+/* 行の最後のtdは土曜日なため青く */
+table.calendar th:last-of-type, table.calendar td:last-of-type{
+    background-color: #ededff;
+    color: #0000FF;
+    font-weight: bold;
+}
+
+/* 今日の日付 */
+table.calendar td.today{
+    background-color: #fbffa3;
+    font-weight: bold;
+}
+
+
+.box22 {
+   float: right;
+    padding: 0.5em 1em;
+    margin: 1em 0;
+    width: 400px;
+    height: 255px;
+    background: #f4f4f4;
+    border-left: solid 6px #5bb7ae;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+
+}
+.box22 p {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+  text-align: center;
+}
