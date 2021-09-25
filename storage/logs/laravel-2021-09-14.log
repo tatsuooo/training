@@ -1,0 +1,9 @@
+[2021-09-14 05:28:57] local.ERROR: Command "sev" is not defined. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"sev\" is not defined. at /mnt/c/php/techboost/training/vendor/symfony/console/Application.php:676)
+[stacktrace]
+#0 /mnt/c/php/techboost/training/vendor/symfony/console/Application.php(237): Symfony\\Component\\Console\\Application->find('sev')
+#1 /mnt/c/php/techboost/training/vendor/symfony/console/Application.php(149): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /mnt/c/php/techboost/training/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /mnt/c/php/techboost/training/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(133): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /mnt/c/php/techboost/training/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 

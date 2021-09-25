@@ -1,9 +1,17 @@
 header {
   margin-top: 20px;
+background: white;
+
 }
+
 h1.logo {
   background: #c2edff;
- padding: 0.5em;
+  position: relative;
+   padding: 0.1em 0.5em;
+   background: -webkit-linear-gradient(to right, rgb(255, 186, 115), transparent);
+   background: linear-gradient(to right, rgb(255, 186, 115), transparent);
+   color: #545454;
+   font-weight: bold;
 }
 
 .ribbon14-wrapper {
@@ -48,51 +56,60 @@ h5.text-sub {
 color: #494949;/*文字色*/
 background: #fffaf4;/*背景色*/
 border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+font-weight: bold;
 }
-.box1 {
+
+  .box1 {
     padding: 0.5em 1em;
     margin: 2em 0;
     color: #232323;
     background: whitesmoke;
     border-left: solid 10px #ffc06e;
      text-align: center;
-
+     width: 200px;
+       height: 950px;
 }
 .box1 p {
     margin: 0;
     padding: 0;
 }
 
+.training {
+  color: #364e96;/*文字色*/
+ border: solid 3px #364e96;/*線色*/
+ padding: 0.5em;/*文字周りの余白*/
+ border-radius: 0.5em;/*角丸*/
+}
+
 ul.kata-menu{
-   text-align: center;
+   text-align: left;
 }
 .button-area {
   text-align: center;
 }
+
 .header-title-area {
   margin-top: 40px;
   margin-bottom: 30px;
 }
+
 body {
   background-color: #CCFFFF;
 }
 
-h4.gender {
-    color: red;
-  float: left;
-  border-bottom: double 5px #FFC778;
-}
 
 .kata-munu {
   width: 100%;
  background-color: #fff;
  padding: 20px 0;
 }
+
 .kata-menu:after {
   clear: both;
   display: block;
   content: " ";
 }
+
 .kata-menu li {
  float: left;
  padding: 0 30px;
@@ -104,12 +121,37 @@ h4.gender {
   color: #333;
   text-decoration: none;
 }
+
+nav {
+color: #339933;
+background-color: #99cc33;
+width: 180px;
+float: left;
+}
+
 li {
+
    padding: 40px 100px;
 }
+
+h4 {
+  color: #364e96;/*文字色*/
+   padding: 0.5em 0;/*上下の余白*/
+   border-top: solid 3px #364e96;/*上線*/
+   border-bottom: solid 3px #364e96;/*下線*/
+   position: absolute;
+
+   left: 400px;
+}
+
 table.calendar{
-    width: 100%;
-    height: 100%;
+    width: 700px;
+    height: 300px;
+    //ここで高さなど位置の調整可能
+    position: relative;
+  top: 60px;
+  left: 180px;
+  right: 60px;
 }
 
 
@@ -117,7 +159,7 @@ table.calendar th, table.calendar td{
     padding: 15px;
     background-color: #FFF;
    text-align: center;
-   border-radius: 13px #CCC;
+  border: 2px solid #CCC;
 }
 
 /* 行の最初のtdは日曜日なため赤く */
@@ -141,20 +183,82 @@ table.calendar td.today{
 }
 
 
+
+
+#box {
+  background-color: white;
+  width: 1200px;
+    height: 1800px;
+
+}
+
+img.gazou {
+  position: absolute;
+  top:1000px;
+  left: 30px;
+  width: 300px;
+  height: 500px;
+}
+
+//ここをいじった
 .box22 {
-   float: right;
+   float: center;
     padding: 0.5em 1em;
     margin: 1em 0;
-    width: 400px;
-    height: 255px;
+    width: 600px;
+    height: 230px;
     background: #f4f4f4;
     border-left: solid 6px #5bb7ae;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+    position: absolute;
+    top:650px;
+    left: 400px;
+
 
 }
+
 .box22 p {
     margin: 0;
     padding: 0;
+
+}
+
+.jogen {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'arial';
+}
+.stretch {
+  width: 590px;
+    height: 420px;
+    position: absolute;
+    top:950px;
+    left: 410px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'arial';
+}
+
+.protein {
+  width: 590px;
+    height: 420px;
+    position: absolute;
+    top:1250px;
+    left: 410px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'arial';
+}
+
+.method {
+  width: 590px;
+    height: 420px;
+    position: absolute;
+    top:1650px;
+    left: 410px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'arial';
 }
 
 footer {

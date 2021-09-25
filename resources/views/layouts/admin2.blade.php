@@ -1,10 +1,8 @@
-
 <!DOCTYPE HTML>
 <html>
   <head>
-    <div class="box5">
     <title>肩トレ画面</title>
-</div>
+
     <meta charset="UTF-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,13 +25,14 @@
 
   </head>
   <body>
+      <div class="gamen1" align="center">肩トレ画面</div><br><br>
+    <div class="box5"></div>
 <header>
-
-    <h5>タイマー</h5>
+    <div class="timer">タイマー</div><br><br>
   <form>
-			<input id="counter" name="counter" type="text" value="00:00:00:00">
-			<input id="btnStart" name="btnStart" type="button" value="start">
-			<input id="btnReset" name="btnReset" type="button" value="reset">
+			<input id="counter" name="counter" type="text" value="00:00:00:00" readonly><br><br>
+			<input id="btnStart" name="btnStart" type="button" value="スタート">
+			<input id="btnReset" name="btnReset" type="button" value="リセット"><br><br>
 		</form>
 <script>
 
@@ -70,14 +69,14 @@ $(function(){
 
 	// スタート
 	function start_count() {
-		$("#btnStart").val("stop");
+		$("#btnStart").val("ストップ");
 		timerFlag = 1;
 		timerID = setInterval(count_up, 10);
 	}
 
 	// ストップ
 	function stop_count() {
-		$("#btnStart").val("start");
+		$("#btnStart").val("スタート");
 		timerFlag = 0;
 		clearInterval(timerID);
 	}
@@ -117,39 +116,40 @@ $(function(){
 </script>
 </header>
 @yield('content')
-<table class="table table-striped table-hover" align="center" border="2" bordercolor="red">
-<h4 align="center">肩トレ画面</h4>
-
+<table class="table table-success table-striped table-hover" align="center" border="2" bordercolor="red">
+<div class="gamen" align="center">【肩トレメニュー】</div><br><br>
+<thead class="thead-dark">
   <tr class="option" align="center">
-    <th width="220">種目名</th>
-    <th width="100"> 回数</th>
-    <th width="180">重量</th>
-    <th width="180">休憩時間</th>
-    <th width="100">option</th>
+    <th width="120" scope="col">種目名</th>
+    <th width="80" scope="col"> 回数</th>
+    <th width="60" scope="col">重量</th>
+    <th width="40" scope="col">休憩時間</th>
+    <th width="80" scope="col">option</th>
     </tr>
-    <tr class="menu1">
-      <td>フロントレイズ</td>
+  </thead>
+    <tr class="menu1" align="center">
+      <th scope="row">フロントレイズ</th>
       <td>7~10</td>
       <td>5kg~</td>
       <td>3分</td>
       <td>  <a href="http://localhost:8000/admin/tra/calender"><button type="button" class="btn btn-success" align="center">詳細</button></a></td>
       </tr>
-      <tr class="menu2">
-        <td>サイドレイズ</td>
+      <tr class="menu2" align="center">
+        <th scope="row">サイドレイズ</th>
         <td>7~10</td>
         <td>5kg~</td>
         <td>3分</td>
         <td> <a href="http://localhost:8000/admin/tra/calender"><button type="button" class="btn btn-success" align="center">詳細</button></a></td>
         </tr>
-        <tr class="menu3">
-          <td>ダンベルフライ</td>
+        <tr class="menu3" align="center">
+          <th scope="row">ダンベルフライ</th>
           <td>8~10</td>
           <td>5kg~</td>
           <td>５分</td>
           <td>  <a href="http://localhost:8000/admin/tra/calender"><button type="button" class="btn btn-success" align="center">詳細</button></a></td>
           </tr>
-          <tr class="menu3">
-            <td>ダンベルショルダープレス</td>
+          <tr class="menu3" align="center">
+            <th scope="row">ダンベルショルダープレス</th>
             <td>8~10</td>
             <td>10kg~</td>
             <td>回復してから</td>
@@ -160,21 +160,32 @@ $(function(){
               <br>
                   <br>
                   <div class="box21">
-<h5><li>肩の筋肉（三角筋）を鍛えることで基礎代謝が上がり、カロリー消費をあげる
+<div class="setu"><li>肩の筋肉（三角筋）を鍛えることで基礎代謝が上がり、カロリー消費をあげる
   ことにより太りにくい体を作ることができます。ダイエットをしたい人にとっても
-  おすすめのトレーニングといえるでしょう。
+  おすすめのトレーニングといえるでしょう。<br>
   また、肩の筋肉は筋肉量が大きく効果が出やすいのでモチベーションが下がることも少ないでしょう。
 
-  逆三角形の体を手に入れ憧れの体に近づきましょう！！</li></h5>
+  逆三角形の体を手に入れ憧れの体に近づきましょう！！</li></div>
+
 
                     </div>
+                    <img src="https://thumb.ac-illust.com/dd/ddd418ac54ea4e103632a7669f64183a_t.jpeg" alt="Branding Engineerのロゴ" class="gazou">
                       <br>
                       <br>
                           <br>
                               <br>
                                   <br>
+                                  <br>
+                                  <br>
+                                      <br>
+                                          <br>
+                                              <br>
 <footer>
-
+  <br>
+  <br>
+      <br>
+          <br>
+              <br>
     <a href="http://localhost:8000/admin/tra/calender"><button type="button" class="btn btn-success">ホーム画面に戻る</button></a>
     <br>
   </footer>

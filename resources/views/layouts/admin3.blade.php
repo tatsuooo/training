@@ -1,20 +1,19 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <div class="box5">
     <title>胸トレ画面</title>
-</div>
     <meta charset="UTF-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-   <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-  <script src="{{ asset('js/app.js') }}" defer></script>
-  <script
-  src="https://code.jquery.com/jquery-1.12.4.min.js"
-  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-  crossorigin="anonymous"></script>
+   <script src="{{ asset('js/app.js') }}" defer></script>
+   <script
+   src="https://code.jquery.com/jquery-1.12.4.min.js"
+   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+   crossorigin="anonymous"></script>
+
   <title>@yield('title') -胸トレ画面</title>
    <meta name="description" content="@yield('description')">
    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -25,12 +24,16 @@
 
   </head>
   <body>
+    <div class="gamen1" align="center">胸トレ画面</div><br><br>
+  <div class="box5"></div>
 <header>
-      <h5>タイマー</h5>
+
+    <div class="timer">タイマー</div><br><br>
+
   <form>
-			<input id="counter" name="counter" type="text" value="00:00:00:00">
-			<input id="btnStart" name="btnStart" type="button" value="start">
-			<input id="btnReset" name="btnReset" type="button" value="reset">
+			<input id="counter" name="counter" type="text" value="00:00:00:00" readonly><br><br>
+			<input id="btnStart" name="btnStart" type="button" value="スタート">
+			<input id="btnReset" name="btnReset" type="button" value="リセット"><br><br>
 		</form>
 <script>
 
@@ -66,7 +69,7 @@ $(function(){
 
 	// スタート
 	function start_count() {
-		$("#btnStart").val("stop");
+		$("#btnStart").val("ストップ");
 		timerFlag = 1;
 		timerID = setInterval(count_up, 10);
 	}
@@ -113,38 +116,40 @@ $(function(){
 </script>
 </header>
 @yield('content')
-<table class="menu" align="center" border="5" bordercolor="red">
-<h4 align="center">胸トレ画面</h4>
+<table class="table table-success table-striped table-hover" align="center" border="2" bordercolor="red">
+<div class="gamen" align="center">【胸トレメニュー】</div><br><br>
+<thead class="thead-dark">
   <tr class="option" align="center">
-    <th width="220">種目名</th>
-    <th width="100"> 回数</th>
-    <th width="180">重量</th>
-    <th width="180">休憩時間</th>
-    <th width="100" align="center">option</th>
+    <th width="120" scope="col">種目名</th>
+    <th width="80" scope="col"> 回数</th>
+    <th width="60" scope="col">重量</th>
+    <th width="40" scope="col">休憩時間</th>
+    <th width="80" scope="col">option</th>
     </tr>
-    <tr class="menu1">
-      <td>ベンチプレス</td>
+  </thead>
+    <tr class="menu1" align="center">
+      <th scope="row">ベンチプレス</th>
       <td>7~10</td>
       <td>目標自重</td>
       <td>5分</td>
       <td>  <a href="http://localhost:8000/admin/tra/calender"><button type="button" class="btn btn-success" align="center">詳細</button></a></td>
       </tr>
-      <tr class="menu2">
-        <td>ダンベルプレス</td>
+      <tr class="menu2" align="center">
+        <th scope="row">ダンベルプレス</th>
         <td>7~12</td>
-        <td>8回程度持ち上げれる重さ</td>
+        <td>8回持ち上げれる重さ</td>
         <td>５分</td>
         <td> <a href="http://localhost:8000/admin/tra/calender"><button type="button" class="btn btn-success" align="center">詳細</button></a></td>
         </tr>
-        <tr class="menu3">
-          <td>ダンベルフライ</td>
+        <tr class="menu3" align="center">
+          <th scope="row">ダンベルフライ</th>
           <td>8~10</td>
           <td>5kg~</td>
           <td>５分</td>
           <td>  <a href="http://localhost:8000/admin/tra/calender"><button type="button" class="btn btn-success" align="center">詳細</button></a></td>
           </tr>
-          <tr class="menu3">
-            <td>ディップス</td>
+          <tr class="menu3" align="center">
+            <th scope="row">ディップス</th>
             <td>8~10</td>
             <td>自重</td>
             <td>回復してから</td>
@@ -155,7 +160,7 @@ $(function(){
               <br>
                   <br>
                     <div class="box21">
-      <h5><li>
+      <div class="setu"><li>
         胸トレは言わずもがな女性にモテる筋肉の部位ランキング第１位です！！！
         それはさておき（笑）胸トレをすることで基礎代謝があがり、痩せやすく
         太りにくい体を作ることができます。大胸筋が肥大化することにより
@@ -163,8 +168,8 @@ $(function(){
         痩せていて腹筋の筋組織が浮き出るだけの腹筋より胸筋をつけてバランスの
         いい体のほうがいいですよね。胸を鍛えて自身の持てる体に！！
 
-
-                        </li></h5>
+      </li></div>
+            <img src="https://thumb.ac-illust.com/58/5830939caa0e357c2d83ae015c6ecaf3_t.jpeg" alt="Branding Engineerのロゴ" class="gazou">
                       <br>
                       <br>
                           <br>

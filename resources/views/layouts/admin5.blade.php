@@ -28,7 +28,7 @@
 <header>
       <h5>タイマー</h5>
   <form>
-			<input id="counter" name="counter" type="text" value="00:00:00:00">
+			<input id="counter" name="counter" type="text" value="00:00:00:00"><br><br>
 			<input id="btnStart" name="btnStart" type="button" value="start">
 			<input id="btnReset" name="btnReset" type="button" value="reset">
 		</form>
@@ -113,7 +113,8 @@ $(function(){
 </script>
 </header>
 @yield('content')
-<table class="menu" align="center" border="5" bordercolor="red">
+<table class="table table-striped table-hover" align="center" border="2" bordercolor="red">
+
 <h4 align="center">尻トレ画面</h4>
   <tr class="option" align="center">
     <th width="220">種目名</th>
@@ -155,12 +156,15 @@ $(function(){
               <br>
                   <br>
                     <div class="box21">
-      <h5><li>
+      <div class="setu"><li>
 女性におすすめのヒップメニュー！！！なぜ人気かというとお尻が引き締まり、足が長く見え、
 ウエストも引き締まり、代謝もよくなるなどヒップの筋トレには数多くのメリットが存在します。
 上で説明した通り特に女性らしい体になりたい！と言う人には欠かせない部位でしょう。
 自信が持てる体になるためにトレーニングしましょう！継続は力なり！
-                        </li></h5>
+</li></div>
+                      </div>
+                      <img src="
+                      https://4.bp.blogspot.com/-skyuBgZ0hdk/Vkb_BCNX9EI/AAAAAAAA0ZI/4l2wDyD-RP4/s800/fukkin_woman.png" alt="Branding Engineerのロゴ" class="gazou">
                       <br>
                       <br>
                           <br>
@@ -172,7 +176,7 @@ $(function(){
     <br>
         <br>
         <br>
-            
+
   </footer>
   </body>
 </html>

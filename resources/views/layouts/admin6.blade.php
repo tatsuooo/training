@@ -28,7 +28,7 @@
 <header>
       <h5>タイマー</h5>
   <form>
-			<input id="counter" name="counter" type="text" value="00:00:00:00">
+			<input id="counter" name="counter" type="text" value="00:00:00:00"><br><br>
 			<input id="btnStart" name="btnStart" type="button" value="start">
 			<input id="btnReset" name="btnReset" type="button" value="reset">
 		</form>
@@ -113,7 +113,8 @@ $(function(){
 </script>
 </header>
 @yield('content')
-<table class="menu" align="center" border="5" bordercolor="red">
+<table class="table table-striped table-hover" align="center" border="2" bordercolor="red">
+
 <h4 align="center">足トレ画面</h4>
   <tr class="option" align="center">
     <th width="220">種目名</th>
@@ -155,13 +156,16 @@ $(function(){
               <br>
                   <br>
                     <div class="box21">
-      <h5><li>
+      <div class="setu"><li>
 足トレをするメリットは体全体のバランスが良くなり、痩せやすい体をつくることができます。
 しかし、足トレはやったからと言ってあからさまに変化すると言うわけではないのでつい
 サボりがちになる部位だと思います。足の筋肉は体全体の70％もの筋肉量があるので放っておく
 のはもったいなく感じます。下半身がしっかりしていると上半身のトレーニングをする時も
 扱える重量が上がり、体全体の筋肥大も期待できます。
-</li></h5>
+</li></div>
+</div>
+<img src="
+https://4.bp.blogspot.com/-skyuBgZ0hdk/Vkb_BCNX9EI/AAAAAAAA0ZI/4l2wDyD-RP4/s800/fukkin_woman.png" alt="Branding Engineerのロゴ" class="gazou">
                       <br>
                       <br>
                           <br>
