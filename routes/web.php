@@ -26,7 +26,13 @@ Route::group(['prefix' => 'admin','middleware' => 'auth' ], function() {
     Route::get('tra/haramenu', 'Admin\TraController@hara');
     Route::get('tra/sirimenu', 'Admin\TraController@siri');
     Route::get('tra/ashimenu', 'Admin\TraController@ashi');
+    Route::get('tra/create', 'Admin\TraController@add');
+    Route::post('tra/create', 'Admin\TraController@create'); # 追記
+    Route::get('tra', 'Admin\TraController@index');
+    Route::get('tra/edit', 'Admin\TraController@edit');
+    Route::post('tra/edit', 'Admin\TraController@update');
 });
+
 
 
 Auth::routes();

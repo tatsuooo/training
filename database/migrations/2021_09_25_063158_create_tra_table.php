@@ -13,7 +13,7 @@ class CreateTraTable extends Migration
      */
     public function up()
     {
-        Schema::create('tra', function (Blueprint $table) {
+        Schema::create('tras', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('menu'); //　トレーニングのメニューを保存するカラム
             $table->string('set');// トレーニングのセット数を保存するカラム
@@ -33,6 +33,6 @@ class CreateTraTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tra');
+        Schema::dropIfExists('tras');
     }
 }
